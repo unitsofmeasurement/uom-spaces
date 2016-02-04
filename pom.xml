@@ -14,7 +14,7 @@
 	<url>http://github.com/unitsofmeasurement/uom-spaces</url>
 	<organization>
 		<name>Units of Measurement project</name>
-		<url>http://www.unitsofmeasurement.org</url>
+		<url>http://www.unitsofmeasurement.github.io</url>
 	</organization>
 	<description>Parent POM for Units of Measurement Spaces</description>
 </project>
