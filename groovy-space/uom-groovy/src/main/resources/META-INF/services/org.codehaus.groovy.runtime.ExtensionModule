@@ -1,0 +1,3 @@
+moduleName=UoM Groovy
+moduleVersion=0.1-SNAPSHOT
+extensionClasses=space.uom.groovy.UnitCategory,space.uom.groovy.QuantityCategory
