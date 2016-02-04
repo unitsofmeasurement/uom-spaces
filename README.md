@@ -11,7 +11,7 @@ If you would like a new space added for a particular case, please just raise a n
 While we provide a Parent POM similar to other repositories, every space and its projects are free to use their own build system or programming language(s) as long as it makes sense in the Units of Measurement context. The license should be an approved [Open source license](https://opensource.org/licenses). Aside from that each space and projects may chose an appropriate license.
 
 ## Waffle.io
-[![Stories in Ready](https://badge.waffle.io/unitsofmeasurement/uom-spaces.png?label=ready&title=Ready)](https://waffle.io/unitsofmeasurementuom-spaces)
+[![Stories in Ready](https://badge.waffle.io/unitsofmeasurement/uom-spaces.png?label=ready&title=Ready)](https://waffle.io/unitsofmeasurement/uom-spaces)
 [![Stories in Progress](https://badge.waffle.io/unitsofmeasurement/uom-spaces.png?label=in%20progress&title=In Progress)](https://waffle.io/unitsofmeasurement/uom-spaces)
 
 [![Throughput Graph](https://graphs.waffle.io/unitsofmeasurement/uom-spaces/throughput.svg)](https://waffle.io/unitsofmeasurement/uom-spaces/metrics)
