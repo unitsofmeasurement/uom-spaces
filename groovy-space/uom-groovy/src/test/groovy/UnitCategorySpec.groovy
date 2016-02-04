@@ -23,16 +23,14 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-import org.javamoney.groovy.MonetaryAmountCategory
-import org.javamoney.groovy.UnitCategory
-import org.javamoney.moneta.Money
-import org.javamoney.moneta.spi.DefaultNumberValue
+import space.uom.groovy.QuantityCategory
+import space.uom.groovy.UnitCategory
+import tec.units.ri.quantity.NumberQuantity
 import spock.lang.Specification
 import spock.lang.Unroll
 import spock.util.mop.Use
 
-import javax.money.NumberValue
-
+import javax.measure.Unit
 
 /**
  * Test of operators added by UnitCategory

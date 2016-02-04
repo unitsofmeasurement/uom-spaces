@@ -24,22 +24,22 @@
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-import org.UoM.groovy.MonetaryAmountCategory
-import org.UoM.groovy.NumberValueCategory
-import org.UoM.moneta.Money
-import org.UoM.moneta.spi.DefaultNumberValue
+import space.uom.groovy.QuantityCategory
+import space.uom.groovy.UnitCategory
+import tec.units.ri.quantity.NumberQuantity
+import tec.units.ri.quantity.Quantities
+import tec.units.ri.unit.Units
 import spock.lang.Ignore
 import spock.lang.Specification
 import spock.util.mop.ConfineMetaClassChanges
 import spock.util.mop.Use
 
-import javax.money.CurrencyUnit
-import javax.money.MonetaryAmount
-import javax.money.Monetary
-import javax.money.NumberValue
+import javax.measure.Quantity
+import javax.measure.Unit
+import javax.measure.spi.Bootstrap
 
 /**
- * Demonstrate and test UoM methods using the Groovy language.
+ * Demonstrate and test Unit API methods using the Groovy language.
  *
  * Particular attention is paid to the issue of using Groovy operator overloading
  * to be able to write things like:
@@ -54,29 +54,29 @@ class UoMSpec extends Specification {
 
     def "get currency unit" () {
         when:
-        CurrencyUnit usDollar = Monetary.getCurrency("USD")
+        Unit len = Units.METRE
 
         then:
-        usDollar.currencyCode == "USD"
+        len.symbol == "m"
     }
 
-    def "create currency amount" () {
+    def "create quantity amount" () {
         when:
-        MonetaryAmount tenUsDollar = Money.of(10, "USD")
+        Quantity tenMetre = Quantities.getQuantity(10, Units.METRE)
 
         then:
-        tenUsDollar.currency.currencyCode == "USD"
-        tenUsDollar.number == 10
+        tenMetre.unit.symbol == "m"
+        tenMetre.value == 10
     }
 
-    def "add MonetaryAmount objects with the add() method" () {
+    def "add Quantity objects with the add() method" () {
         when:
-        MonetaryAmount amount1 = Money.of(10, "USD")
-        MonetaryAmount amount2 = Money.of(1, "USD")
-        MonetaryAmount sum = amount1.add(amount2)
+        Quantity amount1 =  Quantities.getQuantity(10, Units.GRAM)
+        Quantity amount2 =  Quantities.getQuantity(1,  Units.KILOGRAM)
+        Quantity sum = amount1.add(amount2)
 
         then:
-        sum.number == 11
-        sum == Money.of(11, "USD")
+        sum.value == 1010
+        sum == Quantities.getQuantity(1011, Units.GRAM)
     }
 }

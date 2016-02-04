@@ -23,9 +23,9 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-import org.javaNumberQuantity.groovy.QuantityCategory
-import org.javaNumberQuantity.groovy.NumberValueCategory
-import org.javaNumberQuantity.moneta.NumberQuantity
+import space.uom.groovy.QuantityCategory
+import space.uom.groovy.UnitCategory
+import tec.units.ri.quantity.NumberQuantity
 import spock.lang.Specification
 import spock.util.mop.Use
 

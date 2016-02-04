@@ -24,41 +24,40 @@
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-import org.javamoney.groovy.MonetaryAmountCategory
-import org.javamoney.groovy.NumberCategory
-import org.javamoney.moneta.Money
+import space.uom.groovy.QuantityCategory
+import space.uom.groovy.UnitCategory
+import tec.units.ri.AbstractUnit
 import spock.lang.Specification
 import spock.util.mop.Use
 
-import javax.money.MonetaryAmount
+import javax.measure.Quantity
 
 /**
- * Tests JavaMoney API and Groovy extensions with Spock.
- * @author Sean Gilligan
+ * Tests Unit API and Groovy extensions with Spock.
  * @author Werner Keil
  */
-@Use(NumberCategory)
+@Use(UnitCategory)
 class GroovyMoneyDemoSpec extends Specification {
 
-    def "Create two MonetaryAmounts and add them with + operator" () {
+    def "Create two Quantitys and add them with + operator" () {
         when:
         def sum = 10.eur + 0.99.eur
 
         then:
         sum.number == 10.99
         sum.currency.currencyCode == "EUR"
-        sum instanceof MonetaryAmount
+        sum instanceof Quantity
         sum.class == Money.class
     }
 	
-	def "Create two MonetaryAmounts and subtract them with - operator" () {
+	def "Create two Quantitys and subtract them with - operator" () {
 		when:
 		def diff = 10.eur - 1.99.eur
 
 		then:
 		diff.number == 8.00
 		diff.currency.currencyCode == "EUR"
-		diff instanceof MonetaryAmount
+		diff instanceof Quantity
 		diff.class == Money.class
 	}
 
@@ -68,8 +67,8 @@ class GroovyMoneyDemoSpec extends Specification {
         def sum = 1.usd + 2.eur
 
         then:
-        javax.money.MonetaryException e = thrown()
-        e.message == "Currency mismatch: USD/EUR"
+        javax.measure.MeasurementException e = thrown()
+        e.message == "Unit mismatch: Length/Mass"
     }
 
 }
