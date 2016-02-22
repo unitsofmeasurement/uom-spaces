@@ -60,7 +60,7 @@
 		<version.prettytime>1.0.8.Final</version.prettytime>
 		<version.agoravamodule>0.7.1-SNAPSHOT</version.agoravamodule>
 		<version.jetty>9.0.7.v20131107</version.jetty>
-
+        <version.uom.fitbit>0.3-SNAPSHOT</version.uom.fitbit>
 		<fileupload.version>1.3</fileupload.version>
 	</properties>
 
@@ -250,6 +250,20 @@
 			<version>${version.agoravamodule}</version>
 			<scope>runtime</scope>
 		</dependency>
+		
+		<!-- UoM-Fitbit -->
+        <dependency>
+            <groupId>tec.uom.client</groupId>
+            <artifactId>uom-fitbit-api</artifactId>
+            <version>${version.uom.fitbit}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>tec.uom.client</groupId>
+            <artifactId>uom-fitbit-cdi</artifactId>
+            <version>${version.uom.fitbit}</version>
+            <scope>runtime</scope>
+        </dependency>
 			
 		<dependency>
 			<groupId>org.primefaces</groupId>

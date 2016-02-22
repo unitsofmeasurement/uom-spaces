@@ -22,6 +22,7 @@ import org.agorava.api.oauth.application.OAuthApplication;
 import org.agorava.api.oauth.application.Param;
 import org.agorava.github.GitHub;
 import org.agorava.xing.Xing;
+import tec.uom.client.fitbit.Fitbit;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Produces;
@@ -42,4 +43,10 @@ public class SettingsProducer {
     @GitHub
     @OAuthApplication(params = {@Param(name = OAuthAppSettingsBuilder.PREFIX, value = "github")})
     public OAuthAppSettings gitHubSettings;
+    
+    @ApplicationScoped
+    @Produces
+    @Fitbit
+    @OAuthApplication(params = {@Param(name = OAuthAppSettingsBuilder.PREFIX, value = "fitbit")})
+    public OAuthAppSettings fitbitSettings;
 }
