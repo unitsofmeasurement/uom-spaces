@@ -33,7 +33,6 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.util.List;
 
-
 @Named
 @SessionScoped
 public class SocialClient implements Serializable {
@@ -56,7 +55,6 @@ public class SocialClient implements Serializable {
         Status = status;
     }
 
-
     public OAuthSession getCurrentSession() {
         return lifeCycleService.getCurrentSession();
     }
@@ -64,7 +62,6 @@ public class SocialClient implements Serializable {
     public void setCurrentSession(OAuthSession currentSession) {
         lifeCycleService.setCurrentSession(currentSession);
     }
-
 
     public List<OAuthSession> getSessions() {
         return lifeCycleService.getAllActiveSessions();
@@ -74,9 +71,7 @@ public class SocialClient implements Serializable {
         return getCurrentSession().toString();
     }
 
-
     public void redirectToAuthorizationURL(String url) throws IOException {
-
         ExternalContext externalContext = FacesContext.getCurrentInstance().getExternalContext();
         externalContext.redirect(url);
     }
@@ -88,9 +83,7 @@ public class SocialClient implements Serializable {
     }
 
     public void serviceInit() throws IOException {
-
         redirectToAuthorizationURL(lifeCycleService.startDanceFor(selectedService));
-
     }
 
     protected void statusUpdateObserver(@Observes @Any StatusUpdated statusUpdate) {
@@ -121,5 +114,4 @@ public class SocialClient implements Serializable {
     public List<String> getListOfServices() {
         return AgoravaContext.getListOfServices();
     }
-
 }

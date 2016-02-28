@@ -21,7 +21,6 @@ import org.agorava.api.oauth.application.OAuthAppSettingsBuilder;
 import org.agorava.api.oauth.application.OAuthApplication;
 import org.agorava.api.oauth.application.Param;
 import org.agorava.github.GitHub;
-import org.agorava.xing.Xing;
 import tec.uom.client.fitbit.Fitbit;
 
 import javax.enterprise.context.ApplicationScoped;
@@ -31,12 +30,6 @@ import javax.enterprise.inject.Produces;
  * @author Werner Keil
  */
 public class SettingsProducer {
-    
-    @ApplicationScoped
-    @Produces
-    @Xing
-    @OAuthApplication(params = {@Param(name = OAuthAppSettingsBuilder.PREFIX, value = "xing")})
-    public OAuthAppSettings xingSettings;
 
     @ApplicationScoped
     @Produces

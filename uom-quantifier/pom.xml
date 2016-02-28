@@ -223,7 +223,7 @@
 			<artifactId>agorava-core-api</artifactId>
 		</dependency>
 	
-		<!-- XING -->
+		<!-- XING 
 		<dependency>
 			<groupId>org.agorava</groupId>
 			<artifactId>agorava-xing-api</artifactId>
@@ -235,7 +235,7 @@
 			<artifactId>agorava-xing-cdi</artifactId>
 			<version>0.3.0-SNAPSHOT</version>
 			<scope>runtime</scope>
-		</dependency>
+		</dependency> -->
 
 		<!-- GitHub -->
 		<dependency>
