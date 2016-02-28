@@ -36,7 +36,7 @@ import java.util.List;
 
 @Named
 @SessionScoped
-public class QSClient implements Serializable {
+public class SocialClient implements Serializable {
 
     private static final long serialVersionUID = 3723552335163650582L;
 
