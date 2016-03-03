@@ -61,6 +61,7 @@
 		<version.agoravamodule>0.7.1-SNAPSHOT</version.agoravamodule>
 		<version.jetty>9.0.7.v20131107</version.jetty>
         <version.uom.fitbit>0.4-SNAPSHOT</version.uom.fitbit>
+         <version.uom.strava>0.2-SNAPSHOT</version.uom.strava>
 		<fileupload.version>1.3</fileupload.version>
 	</properties>
 
@@ -222,20 +223,6 @@
 			<groupId>org.agorava</groupId>
 			<artifactId>agorava-core-api</artifactId>
 		</dependency>
-	
-		<!-- XING 
-		<dependency>
-			<groupId>org.agorava</groupId>
-			<artifactId>agorava-xing-api</artifactId>
-			<version>0.3.0-SNAPSHOT</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.agorava</groupId>
-			<artifactId>agorava-xing-cdi</artifactId>
-			<version>0.3.0-SNAPSHOT</version>
-			<scope>runtime</scope>
-		</dependency> -->
 
 		<!-- GitHub -->
 		<dependency>
@@ -264,6 +251,21 @@
             <version>${version.uom.fitbit}</version>
             <scope>runtime</scope>
         </dependency>
+        
+        <!-- UoM-Strava -->
+        <dependency>
+            <groupId>tec.uom.client</groupId>
+            <artifactId>uom-strava-api</artifactId>
+            <version>${version.uom.strava}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>tec.uom.client</groupId>
+            <artifactId>uom-strava-cdi</artifactId>
+            <version>${version.uom.strava}</version>
+            <scope>runtime</scope>
+        </dependency>
+        
 			
 		<dependency>
 			<groupId>org.primefaces</groupId>
