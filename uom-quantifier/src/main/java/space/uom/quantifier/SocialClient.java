@@ -112,6 +112,10 @@ public class SocialClient implements Serializable {
     }
 
     public List<String> getListOfServices() {
-        return AgoravaContext.getListOfServices();
+    	List<String> list = AgoravaContext.getListOfServices();
+    	for (String service : list) {
+    		System.out.println("Service: " + service);
+    	}
+    	return list;
     }
 }
