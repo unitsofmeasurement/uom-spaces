@@ -23,6 +23,7 @@ import org.agorava.api.oauth.application.Param;
 import org.agorava.github.GitHub;
 
 import tec.uom.client.fitbit.Fitbit;
+import tec.uom.client.runkeeper.RunKeeper;
 import tec.uom.client.strava.Strava;
 
 import javax.enterprise.context.ApplicationScoped;
@@ -44,6 +45,12 @@ public class SettingsProducer {
     @Fitbit
     @OAuthApplication(params = {@Param(name = OAuthAppSettingsBuilder.PREFIX, value = "fitbit")})
     public OAuthAppSettings fitbitSettings;
+    
+    @ApplicationScoped
+    @Produces
+    @RunKeeper
+    @OAuthApplication(params = {@Param(name = OAuthAppSettingsBuilder.PREFIX, value = "runkeeper")})
+    public OAuthAppSettings runkeeperSettings;
 
     @ApplicationScoped
     @Produces

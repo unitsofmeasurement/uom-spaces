@@ -61,6 +61,7 @@
 		<version.agoravamodule>0.7.1-SNAPSHOT</version.agoravamodule>
 		<version.jetty>9.0.7.v20131107</version.jetty>
         <version.uom.fitbit>0.4-SNAPSHOT</version.uom.fitbit>
+        <version.uom.runkeeper>0.1-SNAPSHOT</version.uom.runkeeper>
         <version.uom.strava>0.2-SNAPSHOT</version.uom.strava>
 		<fileupload.version>1.3</fileupload.version>
 	</properties>
@@ -249,6 +250,20 @@
             <groupId>tec.uom.client</groupId>
             <artifactId>uom-fitbit-cdi</artifactId>
             <version>${version.uom.fitbit}</version>
+            <scope>runtime</scope>
+        </dependency>
+        
+        <!-- UoM-Runkeeper -->
+        <dependency>
+            <groupId>tec.uom.client</groupId>
+            <artifactId>uom-runkeeper-api</artifactId>
+            <version>${version.uom.runkeeper}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>tec.uom.client</groupId>
+            <artifactId>uom-runkeeper-cdi</artifactId>
+            <version>${version.uom.runkeeper}</version>
             <scope>runtime</scope>
         </dependency>
         
