@@ -240,7 +240,7 @@
 		</dependency>
 		
 		<!-- UoM-Fitbit -->
-        <dependency>
+        <!-- >dependency>
             <groupId>tec.uom.client</groupId>
             <artifactId>uom-fitbit-api</artifactId>
             <version>${version.uom.fitbit}</version>
@@ -251,7 +251,7 @@
             <artifactId>uom-fitbit-cdi</artifactId>
             <version>${version.uom.fitbit}</version>
             <scope>runtime</scope>
-        </dependency>
+        </dependency -->
         
         <!-- UoM-Runkeeper -->
         <dependency>
@@ -268,7 +268,7 @@
         </dependency>
         
         <!-- UoM-Strava -->
-        <dependency>
+        <!--  >dependency>
             <groupId>tec.uom.client</groupId>
             <artifactId>uom-strava-api</artifactId>
             <version>${version.uom.strava}</version>
@@ -279,7 +279,7 @@
             <artifactId>uom-strava-cdi</artifactId>
             <version>${version.uom.strava}</version>
             <scope>runtime</scope>
-        </dependency>
+        </dependency -->
         
 			
 		<dependency>
