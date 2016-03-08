@@ -22,7 +22,9 @@ import org.agorava.api.oauth.application.OAuthApplication;
 import org.agorava.api.oauth.application.Param;
 import org.agorava.github.GitHub;
 
+import tec.uom.client.fitbit.Fitbit;
 import tec.uom.client.runkeeper.RunKeeper;
+import tec.uom.client.withings.Withings;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Produces;
@@ -38,11 +40,11 @@ public class SettingsProducer {
     @OAuthApplication(params = {@Param(name = OAuthAppSettingsBuilder.PREFIX, value = "github")})
     public OAuthAppSettings gitHubSettings;
     
-//    @ApplicationScoped
-//    @Produces
-//    @Fitbit
-//    @OAuthApplication(params = {@Param(name = OAuthAppSettingsBuilder.PREFIX, value = "fitbit")})
-//    public OAuthAppSettings fitbitSettings;
+    @ApplicationScoped
+    @Produces
+    @Fitbit
+    @OAuthApplication(params = {@Param(name = OAuthAppSettingsBuilder.PREFIX, value = "fitbit")})
+    public OAuthAppSettings fitbitSettings;
     
     @ApplicationScoped
     @Produces
@@ -55,4 +57,10 @@ public class SettingsProducer {
 //    @Strava
 //    @OAuthApplication(params = {@Param(name = OAuthAppSettingsBuilder.PREFIX, value = "strava")})
 //    public OAuthAppSettings stravaSettings;
+    
+    @ApplicationScoped
+    @Produces
+    @Withings
+    @OAuthApplication(params = {@Param(name = OAuthAppSettingsBuilder.PREFIX, value = "withings")})
+    public OAuthAppSettings withingsSettings;
 }

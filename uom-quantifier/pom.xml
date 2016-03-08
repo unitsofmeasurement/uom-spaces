@@ -63,6 +63,7 @@
         <version.uom.fitbit>0.4-SNAPSHOT</version.uom.fitbit>
         <version.uom.runkeeper>0.1-SNAPSHOT</version.uom.runkeeper>
         <version.uom.strava>0.2-SNAPSHOT</version.uom.strava>
+         <version.uom.withings>0.1-SNAPSHOT</version.uom.withings>
 		<fileupload.version>1.3</fileupload.version>
 	</properties>
 
@@ -240,7 +241,7 @@
 		</dependency>
 		
 		<!-- UoM-Fitbit -->
-        <!-- >dependency>
+        <dependency>
             <groupId>tec.uom.client</groupId>
             <artifactId>uom-fitbit-api</artifactId>
             <version>${version.uom.fitbit}</version>
@@ -251,7 +252,7 @@
             <artifactId>uom-fitbit-cdi</artifactId>
             <version>${version.uom.fitbit}</version>
             <scope>runtime</scope>
-        </dependency -->
+        </dependency>
         
         <!-- UoM-Runkeeper -->
         <dependency>
@@ -280,6 +281,20 @@
             <version>${version.uom.strava}</version>
             <scope>runtime</scope>
         </dependency -->
+        
+        <!-- UoM-Withings -->
+        <dependency>
+            <groupId>tec.uom.client</groupId>
+            <artifactId>uom-withings-api</artifactId>
+            <version>${version.uom.withings}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>tec.uom.client</groupId>
+            <artifactId>uom-withings-cdi</artifactId>
+            <version>${version.uom.withings}</version>
+            <scope>runtime</scope>
+        </dependency>
         
 			
 		<dependency>
