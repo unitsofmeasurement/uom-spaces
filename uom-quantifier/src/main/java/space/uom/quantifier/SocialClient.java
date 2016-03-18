@@ -29,8 +29,10 @@ import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
+
 import java.io.IOException;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 @Named
@@ -112,9 +114,19 @@ public class SocialClient implements Serializable {
     }
 
     public List<String> getListOfServices() {
-    	List<String> list = AgoravaContext.getListOfServices();
-    	for (String service : list) {
-    		System.out.println("Service: " + service);
+    	List<String> availableServices = AgoravaContext.getListOfServices();
+    	List<String> list = new ArrayList<>();
+    	for (String service : availableServices) {
+    		System.out.println("Available Service: " + service); // TODO use logging
+    		try {
+    			SocialFeature feature = SocialFeature.valueOf(service);
+    			if (feature.isActive()) {
+    				System.out.println("Adding Service: " + service); // TODO use logging
+    				list.add(service);
+    			}
+    		} catch (Exception e) {
+    			System.out.println(e); // TODO use logging
+    		}
     	}
     	return list;
     }

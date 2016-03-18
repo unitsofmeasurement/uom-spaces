@@ -24,8 +24,6 @@ import org.agorava.github.GitHub;
 
 import tec.uom.client.fitbit.Fitbit;
 import tec.uom.client.runkeeper.RunKeeper;
-import tec.uom.client.withings.Withings;
-
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Produces;
 
@@ -57,10 +55,11 @@ public class SettingsProducer {
 //    @Strava
 //    @OAuthApplication(params = {@Param(name = OAuthAppSettingsBuilder.PREFIX, value = "strava")})
 //    public OAuthAppSettings stravaSettings;
-    
+/*    
     @ApplicationScoped
     @Produces
     @Withings
     @OAuthApplication(params = {@Param(name = OAuthAppSettingsBuilder.PREFIX, value = "withings")})
     public OAuthAppSettings withingsSettings;
+    */
 }
