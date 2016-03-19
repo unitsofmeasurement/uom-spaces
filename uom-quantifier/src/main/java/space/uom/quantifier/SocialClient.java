@@ -34,20 +34,23 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 @Named
 @SessionScoped
 public class SocialClient implements Serializable {
-
+		   
     private static final long serialVersionUID = 3723552335163650582L;
 
+    private static final Logger LOGGER = Logger.getLogger(SocialClient.class.getName());
+    
     @Inject
     OAuthLifeCycleService lifeCycleService;
 
     private String Status;
 
     private String selectedService;
-
 
     public String getStatus() {
         return Status;
@@ -117,15 +120,15 @@ public class SocialClient implements Serializable {
     	List<String> availableServices = AgoravaContext.getListOfServices();
     	List<String> list = new ArrayList<>();
     	for (String service : availableServices) {
-    		System.out.println("Available Service: " + service); // TODO use logging
+    		LOGGER.log(Level.FINEST, "Available service: " + service);
     		try {
     			SocialFeature feature = SocialFeature.valueOf(service);
     			if (feature.isActive()) {
-    				System.out.println("Adding Service: " + service); // TODO use logging
+    				LOGGER.log(Level.INFO, "Adding service: " + service); // TODO change to finer
     				list.add(service);
     			}
     		} catch (Exception e) {
-    			System.out.println(e); // TODO use logging
+    			LOGGER.log(Level.WARNING, "Error", e);
     		}
     	}
     	return list;

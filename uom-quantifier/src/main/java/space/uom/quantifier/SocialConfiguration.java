@@ -31,23 +31,26 @@ import org.togglz.core.user.UserProvider;
 @ApplicationScoped
 public class SocialConfiguration implements TogglzConfig {
 
-    public Class<? extends Feature> getFeatureClass() {
-        return SocialFeature.class;
-    }
+	private static final String USER_HOME = System.getProperty("user.home",
+			"/temp");
 
-    public StateRepository getStateRepository() {
-        return new FileBasedStateRepository(new File("/temp/quantifier-features.properties"));
-        // TODO try to use a different location
-    }
+	public Class<? extends Feature> getFeatureClass() {
+		return SocialFeature.class;
+	}
 
-    public UserProvider getUserProvider() {
-        //return new ServletUserProvider("admin");
-    	  return new UserProvider() {
-              @Override
-              public FeatureUser getCurrentUser() {
-                  return new SimpleFeatureUser("admin", true);
-              }
-          };
-    }
+	public StateRepository getStateRepository() {
+		return new FileBasedStateRepository(new File(USER_HOME + File.separator
+				+ ".quantifier-features.properties"));
+	}
+
+	public UserProvider getUserProvider() {
+		// return new ServletUserProvider("admin");
+		return new UserProvider() {
+			@Override
+			public FeatureUser getCurrentUser() {
+				return new SimpleFeatureUser("admin", true);
+			}
+		};
+	}
 
 }
