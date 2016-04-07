@@ -7,7 +7,7 @@ This is a place for Open collaboration projects and events like [Hackerspaces](h
 
 ## Current Spaces
 -----------
-* [uom-groovy](./groovylang-support/uom-groovy) A Groovy Extension Module for Units of Measurement providing operator overloading and more.
+* [groovy-space](./groovy-space) A Groovy Extension Module for Units of Measurement providing operator overloading and more.
 * [uom-quantifier](./uom-quantifier) A Quantified Self demo based on Client Modules using Agorava.
 
 If you would like a new space added for a particular case, please just raise a new issue [here](https://github.com/unitsofmeasurement/uom-spaces/issues).
