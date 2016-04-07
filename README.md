@@ -6,7 +6,6 @@ Units of Measurement Spaces
 This is a place for Open collaboration projects and events like [Hackerspaces](http://hackerspaces.org/), [Hackergarten](http://hackergarten.net/), [Adopt a JSR](https://java.net/projects/adoptajsr/pages/Home), [Makerfaire](http://makerfaire.com/), [Nighthacking](http://nighthacking.com/) or similar occasions.
 
 ## Current Spaces
------------
 * [groovy-space](./groovy-space) A Groovy Extension Module for Units of Measurement providing operator overloading and more.
 * [uom-quantifier](./uom-quantifier) A Quantified Self demo based on Client Modules using Agorava.
 
