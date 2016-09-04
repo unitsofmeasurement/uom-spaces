@@ -51,7 +51,7 @@
 		<version.prettytime>1.0.8.Final</version.prettytime>
 		<version.agoravamodule>0.7.1-SNAPSHOT</version.agoravamodule>
 		<version.jetty>9.0.7.v20131107</version.jetty>
-		<version.uom.fitbit>0.4-SNAPSHOT</version.uom.fitbit>
+		<version.uom.fitbit>0.4</version.uom.fitbit>
 		<version.uom.runkeeper>0.1-SNAPSHOT</version.uom.runkeeper>
 		<version.uom.strava>0.2-SNAPSHOT</version.uom.strava>
 		<version.uom.withings>0.1-SNAPSHOT</version.uom.withings>
