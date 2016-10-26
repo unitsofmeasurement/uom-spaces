@@ -1,7 +1,7 @@
 # uom-spaces
 Units of Measurement Spaces
 
-![Space, the final frontier](http://www.funnylinks4all.com/images/movies-phrases/space-the-final-frontier.jpg)
+![Space, the final frontier](http://orig08.deviantart.net/617f/f/2011/277/c/1/space_the_final_frontier_mr_by_glenroberson-d4bs47v.jpg)
 
 This is a place for Open collaboration projects and events like [Hackerspaces](http://hackerspaces.org/), [Hackergarten](http://hackergarten.net/), [Adopt a JSR](https://java.net/projects/adoptajsr/pages/Home), [Makerfaire](http://makerfaire.com/), [Nighthacking](http://nighthacking.com/) or similar occasions.
 
