@@ -7,6 +7,7 @@ This is a place for Open collaboration projects and events like [Hackerspaces](h
 
 ## Current Spaces
 * [groovy-space](./groovy-space) A Groovy Extension Module for Units of Measurement providing operator overloading and more.
+* [guardians-of-the-galaxy](./guardians-of-the-galaxy) System of Units from the movie 'Guardians of the Galaxy'.
 * [uom-quantifier](./uom-quantifier) A Quantified Self demo based on Client Modules using Agorava.
 
 If you would like a new space added for a particular case, please just raise a new issue [here](https://github.com/unitsofmeasurement/uom-spaces/issues).
