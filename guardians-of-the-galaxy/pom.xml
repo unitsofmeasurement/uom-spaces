@@ -35,9 +35,9 @@
 			<artifactId>unit-ri</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>tec.uom.lib</groupId>
-			<artifactId>uom-lib-common</artifactId>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 </project>
