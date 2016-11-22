@@ -42,4 +42,7 @@
 			<url>http://oss.jfrog.org/artifactory/libs-snapshot</url>
 		</repository>
 	</repositories>
+	<modules>
+		<module>guardians-of-the-galaxy</module>
+	</modules>
 </project>
