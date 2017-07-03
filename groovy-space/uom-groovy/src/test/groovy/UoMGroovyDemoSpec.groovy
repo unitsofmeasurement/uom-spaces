@@ -1,6 +1,6 @@
 /*
  *  Unit-API - Units of Measurement API for Java
- *  Copyright (c) 2005-2016, Jean-Marie Dautelle, Werner Keil, V2COM.
+ *  Copyright (c) 2005-2017, Werner Keil and others.
  *
  * All rights reserved.
  *
@@ -37,7 +37,7 @@ import javax.measure.Quantity
  * @author Werner Keil
  */
 @Use(UnitCategory)
-class GroovyMoneyDemoSpec extends Specification {
+class UoMGroovyDemoSpec extends Specification {
 
     def "Create two Quantitys and add them with + operator" () {
         when:
@@ -58,13 +58,13 @@ class GroovyMoneyDemoSpec extends Specification {
 		diff.number == 8.00
 		diff.currency.currencyCode == "EUR"
 		diff instanceof Quantity
-		diff.class == Money.class
+		diff.class == Quantity.class
 	}
 
 	
-    def "USD + EUR throws exception" () {
+    def "m + kg throws exception" () {
         when:
-        def sum = 1.usd + 2.eur
+        def sum = 1.m + 2.kg
 
         then:
         javax.measure.MeasurementException e = thrown()
