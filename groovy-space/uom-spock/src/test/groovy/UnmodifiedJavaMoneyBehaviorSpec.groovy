@@ -29,7 +29,7 @@ import org.javamoney.moneta.spi.DefaultNumberValue
 import spock.lang.Ignore
 import spock.lang.Specification
 
-import javax.money.MonetaryAmount
+import javax.measure.Quantity
 import javax.money.NumberValue
 
 /**

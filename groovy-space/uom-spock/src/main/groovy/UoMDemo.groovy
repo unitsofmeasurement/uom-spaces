@@ -1,6 +1,6 @@
 /*
  *  Unit-API - Units of Measurement API for Java
- *  Copyright (c) 2005-2016, Jean-Marie Dautelle, Werner Keil, V2COM.
+ *  Copyright (c) 2005-2017, Jean-Marie Dautelle, Werner Keil and others.
  *
  * All rights reserved.
  *
@@ -23,20 +23,22 @@
  * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
- 
-import org.javamoney.moneta.Money
 
-import javax.money.MonetaryAmount
-import javax.money.NumberValue
+import javax.measure.Quantity
+
+
+import javax.measure.Quantity
+import javax.measure.spi.ServiceProvider
+import static tec.units.ri.unit.Units.METRE
 
 /**
  *
  */
-class JavaMoneyDemo {
+class UoMDemo {
         public static void main(String[] args) {
 
-            NumberValue value1 = Money.of(10, "USD").number
-            NumberValue value2 = Money.of(0.99, "USD").number
+            Quantity value1 = ServiceProvider.current().getQuantityFactory().create(10, METRE)
+            Quantity value2 = ServiceProvider.current().getQuantityFactory().create(0.99, METRE)
 
             def sum = value1 + value2               // Add NumberValue with '+' operator
 

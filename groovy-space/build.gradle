@@ -13,8 +13,8 @@ subprojects {
     }
 
     dependencies {
-        compile 'javax.measure:unit-api:0.8'
-        compile 'tec.units:unit-ri:0.8'
+        compile 'javax.measure:unit-api:1.0'
+        compile 'tec.units:unit-ri:1.0.3'
         compile 'org.codehaus.groovy:groovy:2.3.1'
 
         testCompile("org.spockframework:spock-core:1.0-groovy-2.3") {
