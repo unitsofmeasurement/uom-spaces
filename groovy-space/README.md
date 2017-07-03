@@ -16,4 +16,3 @@ To build all:
 From the `groovy-space` directory:
 
     ./gradlew build
-
