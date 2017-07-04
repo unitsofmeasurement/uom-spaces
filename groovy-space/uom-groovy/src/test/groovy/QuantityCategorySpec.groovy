@@ -1,6 +1,6 @@
 /*
  *  Unit-API - Units of Measurement API for Java
- *  Copyright (c) 2005-2016, Jean-Marie Dautelle, Werner Keil, V2COM.
+ *  Copyright (c) 2005-2017, Werner Keil and others.
  *
  * All rights reserved.
  *
@@ -26,6 +26,8 @@
 import space.uom.groovy.QuantityCategory
 import space.uom.groovy.UnitCategory
 import tec.units.ri.quantity.NumberQuantity
+import tec.units.ri.unit.Units.METRE
+import tec.units.ri.unit.Units.KILOGRAM
 import spock.lang.Specification
 import spock.util.mop.Use
 
@@ -37,25 +39,25 @@ class QuantityCategorySpec extends Specification {
 
     def "Quantity + Quantity = Quantity" () {
         when:
-        def amount1 = NumberQuantity.of(10, "USD")
-        def amount2 = NumberQuantity.of(1, "USD")
+        def amount1 = NumberQuantity.of(10, METRE)
+        def amount2 = NumberQuantity.of(1, METRE)
         def sum = amount1 + amount2
 
         then:
-        sum.number == 11
-        sum.currency.currencyCode == "USD"
+        sum.value == 11
+        sum.unit == METRE
         sum.class == NumberQuantity.class
     }
 
-    def "USD + EUR throws exception" () {
+    def "m + kg throws exception" () {
         when:
-        def amount1 = NumberQuantity.of(10, "USD")
-        def amount2 = NumberQuantity.of(1, "EUR")
+        def amount1 = NumberQuantity.of(10, METRE)
+        def amount2 = NumberQuantity.of(1, KILOGRAM)
         def sum = amount1 + amount2
 
         then:
         javax.measure.MeasurementException e = thrown()
-        e.message == "Currency mismatch: USD/EUR"
+        e.message == "Currency mismatch: m/kg"
     }
 
 }

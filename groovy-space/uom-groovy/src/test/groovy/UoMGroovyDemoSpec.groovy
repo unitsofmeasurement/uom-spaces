@@ -41,22 +41,22 @@ class UoMGroovyDemoSpec extends Specification {
 
     def "Create two Quantitys and add them with + operator" () {
         when:
-        def sum = 10.eur + 0.99.eur
+        def sum = 10.m + 0.99.m
 
         then:
         sum.number == 10.99
-        sum.currency.currencyCode == "EUR"
+        sum.unit == "m"
         sum instanceof Quantity
-        sum.class == Money.class
+        sum.class == Quantity.class
     }
 	
 	def "Create two Quantitys and subtract them with - operator" () {
 		when:
-		def diff = 10.eur - 1.99.eur
+		def diff = 10.m - 1.99.m
 
 		then:
-		diff.number == 8.00
-		diff.currency.currencyCode == "EUR"
+		diff.value == 8.00
+		diff.unit == "m"
 		diff instanceof Quantity
 		diff.class == Quantity.class
 	}
