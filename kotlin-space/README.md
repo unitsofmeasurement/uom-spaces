@@ -1,17 +1,8 @@
 Kotlin Language and Units of Measurement
 ----------------------------------------
 
-Project(s) demonstrate usage of Unit API in the Kotlin Language.
+Project(s) demonstrate usage of Unit API for the Kotlin Language.
 
 # Subprojects
 
-* [uom-kotlin](./uom-kotlin): A Kotlin Extension Module for Units of Measurement.
-
-# Build Instructions
-
-To build all:
-
-From the `kotlin-space` directory:
-
-    ./gradlew build
-
+* [Physikal](https://github.com/Tenkiv/Physikal): A Kotlin Extension Module for Units of Measurement based on JSR 363 and [UoM-SE](https://github.com/unitsofmeasurement/uom-se)
