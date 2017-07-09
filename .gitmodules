@@ -1,0 +1,3 @@
+[submodule "kotlin-space/Physikal"]
+	path = kotlin-space/Physikal
+	url = https://github.com/Tenkiv/Physikal
