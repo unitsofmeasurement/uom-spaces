@@ -19,7 +19,4 @@ While we provide a Parent POM similar to other repositories, every space and its
 [![Issue Stats](http://issuestats.com/github/unitsofmeasurement/uom-spaces/badge/issue)](http://issuestats.com/github/unitsofmeasurement/uom-spaces)
 [![Issue Stats](http://issuestats.com/github/unitsofmeasurement/uom-spaces/badge/pr)](http://issuestats.com/github/unitsofmeasurement/uom-spaces)
 -->
-## Waffle.io
-[![Stories in Ready](https://badge.waffle.io/unitsofmeasurement/uom-spaces.png?label=ready&title=Ready)](https://waffle.io/unitsofmeasurement/uom-spaces)
 
-[![Throughput Graph](https://graphs.waffle.io/unitsofmeasurement/uom-spaces/throughput.svg)](https://waffle.io/unitsofmeasurement/uom-spaces/metrics)
