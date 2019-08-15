@@ -4,10 +4,9 @@
 	<parent>
 		<groupId>space.uom</groupId>
 		<artifactId>uom-spaces</artifactId>
-		<version>0.2-SNAPSHOT</version>
+		<version>0.2</version>
 	</parent>
 	<artifactId>guardians-of-the-galaxy</artifactId>
-	<version>0.1-SNAPSHOT</version>
 	<!-- ======================================================= -->
 	<!-- Build Settings -->
 	<!-- ======================================================= -->
@@ -40,4 +39,5 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<name>Guardians of the Galaxy</name>
 </project>

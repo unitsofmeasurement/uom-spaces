@@ -27,25 +27,103 @@ package space.uom.guardians;
 
 import static org.junit.Assert.*;
 
-import static space.uom.guardians.GuardiansOfTheGalaxy.BULE;
+import static space.uom.guardians.GuardiansOfTheGalaxy.*;
 import static javax.measure.MetricPrefix.MICRO;
-import static tech.units.indriya.unit.Units.METRE;
+import static tech.units.indriya.unit.Units.*;
+
+import java.math.BigDecimal;
 
 import javax.measure.Quantity;
 import javax.measure.quantity.Length;
+import javax.measure.quantity.Mass;
+
+import tech.units.indriya.function.RationalNumber;
 import tech.units.indriya.quantity.Quantities;
 import org.junit.Test;
 
 public class GuardiansOfTheGalaxyTest {
 
-    @Test
-    public void testGamora() {
-	//Gamora
+	@Test
+	public void testGamora() {
+		// Gamora
 
-	Quantity<Length> height = Quantities.getQuantity(224, MICRO(BULE)); // 1.7m
-	Quantity<Length> inM = height.to(METRE);
-	assertEquals(Double.valueOf(1.6999360000000001d), inM.getValue());
+		Quantity<Length> height = Quantities.getQuantity(224, MICRO(BULE)); // 1.7m
+		Quantity<Length> inM = height.to(METRE);
+		assertEquals(RationalNumber.of(1.699936), inM.getValue());
+
+		// Weight: 2008 grets = 54kg
+		Quantity<Mass> weight = Quantities.getQuantity(2008, GRET);
+		Quantity<Mass> inKg = weight.to(KILOGRAM);
+		assertEquals(RationalNumber.of(54.216), inKg.getValue());
+	}
 	
-	//Weight: 2008 grets = 54kg 
-    }
+	@Test
+	public void testDrax() {
+		// Drax
+
+		Quantity<Length> height = Quantities.getQuantity(203, MICRO(BULE)); // 1.54m
+		Quantity<Length> inM = height.to(METRE);
+		assertEquals(RationalNumber.of(1.540567), inM.getValue());
+
+		// Weight: 3892 grets = 105kg
+		Quantity<Mass> weight = Quantities.getQuantity(3892, GRET);
+		Quantity<Mass> inKg = weight.to(KILOGRAM);
+		assertEquals(RationalNumber.of(105.084), inKg.getValue());
+	}
+	
+	@Test
+	public void testGroot() {
+		// Groot
+
+		Quantity<Length> height = Quantities.getQuantity(500, MICRO(BULE)); // 3.79m
+		Quantity<Length> inM = height.to(METRE);
+		assertEquals(RationalNumber.of(3.7945), inM.getValue());
+
+		// Weight: 4258 grets = 114.96kg
+		Quantity<Mass> weight = Quantities.getQuantity(4258, GRET);
+		Quantity<Mass> inKg = weight.to(KILOGRAM);
+		assertEquals(RationalNumber.of(114.966), inKg.getValue());
+	}
+	
+	@Test
+	public void testStarlord() {
+		// Starlord
+
+		Quantity<Length> height = Quantities.getQuantity(249, MICRO(BULE)); // 1.89m
+		Quantity<Length> inM = height.to(METRE);
+		assertEquals(RationalNumber.of(1.889661), inM.getValue());
+
+		// Weight: 3235 grets = 87kg
+		Quantity<Mass> weight = Quantities.getQuantity(3235, GRET);
+		Quantity<Mass> inKg = weight.to(KILOGRAM);
+		assertEquals(RationalNumber.of(87.345), inKg.getValue());
+	}
+	
+	@Test
+	public void testRocket() {
+		// Rocket Raccoon
+
+		Quantity<Length> height = Quantities.getQuantity(112, MICRO(BULE)); // 0.85m
+		Quantity<Length> inM = height.to(METRE);
+		assertEquals(RationalNumber.of(0.849968), inM.getValue());
+
+		// Weight: 743.7 grets = 20kg
+		Quantity<Mass> weight = Quantities.getQuantity(743.7, GRET);
+		Quantity<Mass> inKg = weight.to(KILOGRAM);
+		assertEquals(BigDecimal.valueOf(20.0799), inKg.getValue());
+	}
+	
+	@Test
+	public void testFatThor() {
+		// Fat Thor
+
+		Quantity<Length> height = Quantities.getQuantity(251, MICRO(BULE)); // 1.9m
+		Quantity<Length> inM = height.to(METRE);
+		assertEquals(RationalNumber.of(1.904839), inM.getValue());
+
+		// Weight: 5050 grets = 136kg ~ 300lb
+		Quantity<Mass> weight = Quantities.getQuantity(5050, GRET);
+		Quantity<Mass> inKg = weight.to(KILOGRAM);
+		assertEquals(RationalNumber.of(136.35), inKg.getValue());
+	}
 }

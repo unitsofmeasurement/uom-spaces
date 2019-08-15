@@ -48,50 +48,47 @@ import tech.units.indriya.format.SimpleUnitFormat;
  *      I calculated the heights and weights of the Guardians Of The Galaxy</a>
  */
 public final class GuardiansOfTheGalaxy extends AbstractSystemOfUnits {
-    /**
-     * Default constructor (prevents this class from being instantiated).
-     */
-    private GuardiansOfTheGalaxy() {
-    }
+	/**
+	 * Default constructor (prevents this class from being instantiated).
+	 */
+	private GuardiansOfTheGalaxy() {
+	}
 
-    /**
-     * The singleton instance of {@code GuardiansOfTheGalaxy}.
-     */
-    private static final GuardiansOfTheGalaxy INSTANCE = new GuardiansOfTheGalaxy();
+	/**
+	 * The singleton instance of {@code GuardiansOfTheGalaxy}.
+	 */
+	private static final GuardiansOfTheGalaxy INSTANCE = new GuardiansOfTheGalaxy();
 
-    @Override
-    public String getName() {
-	return "Units of measurement from 'Guardians of the Galaxy'";
-    }
+	@Override
+	public String getName() {
+		return "Units of measurement from 'Guardians of the Galaxy'";
+	}
 
-    /**
-     * Adds a new unit not mapped to any specified quantity type.
-     *
-     * @param unit
-     *            the unit being added.
-     * @return <code>unit</code>.
-     */
-    private static <U extends Unit<?>> U addUnit(U unit) {
-	INSTANCE.units.add(unit);
-	return unit;
-    }
+	/**
+	 * Adds a new unit not mapped to any specified quantity type.
+	 *
+	 * @param unit the unit being added.
+	 * @return <code>unit</code>.
+	 */
+	private static <U extends Unit<?>> U addUnit(U unit) {
+		INSTANCE.units.add(unit);
+		return unit;
+	}
 
-    /**
-     * <code>1 bule = 7589m</code> (standard name
-     * <code>bul</code>).
-     */
-    public static final Unit<Length> BULE = addUnit(METRE.multiply(7589));
+	/**
+	 * <code>1 bule = 7589m</code> (standard name <code>bul</code>).
+	 */
+	public static final Unit<Length> BULE = addUnit(METRE.multiply(7589));
 
-    /**
-     * <code>1 gret = 0.027kg</code> (standard name
-     * <code>grt</code>).
-     */
-    public static final Unit<Mass> GRET = addUnit(KILOGRAM.multiply(0.027));
+	/**
+	 * <code>1 gret = 0.027kg</code> (standard name <code>grt</code>).
+	 */
+	public static final Unit<Mass> GRET = addUnit(KILOGRAM.multiply(0.027));
 
-    // //////////////////////////////////////////////////////////////////////////
-    // Label adjustments for Guardian system
-    static {
-	SimpleUnitFormat.getInstance().label(BULE, "bul");
-	SimpleUnitFormat.getInstance().label(GRET, "grt");
-    }
+	// //////////////////////////////////////////////////////////////////////////
+	// Label adjustments for Guardian system
+	static {
+		SimpleUnitFormat.getInstance().label(BULE, "bul");
+		SimpleUnitFormat.getInstance().label(GRET, "grt");
+	}
 }
