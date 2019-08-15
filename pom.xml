@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>uom-spaces</artifactId>
 	<groupId>space.uom</groupId>
-	<version>0.2</version>
+	<version>0.3</version>
 	<parent>
 		<groupId>tech.uom</groupId>
 		<artifactId>uom-parent</artifactId>
