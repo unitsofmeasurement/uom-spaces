@@ -28,15 +28,13 @@ package space.uom.guardians;
 import static org.junit.Assert.*;
 
 import static space.uom.guardians.GuardiansOfTheGalaxy.BULE;
-import static tec.units.ri.unit.MetricPrefix.MICRO;
-import static tec.units.ri.unit.Units.METRE;
+import static javax.measure.MetricPrefix.MICRO;
+import static tech.units.indriya.unit.Units.METRE;
 
 import javax.measure.Quantity;
 import javax.measure.quantity.Length;
-
+import tech.units.indriya.quantity.Quantities;
 import org.junit.Test;
-
-import tec.units.ri.quantity.Quantities;
 
 public class GuardiansOfTheGalaxyTest {
 

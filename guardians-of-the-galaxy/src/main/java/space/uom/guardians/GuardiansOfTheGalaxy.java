@@ -25,13 +25,13 @@
  */
 package space.uom.guardians;
 
-import static tec.units.ri.unit.Units.*;
+import static tech.units.indriya.unit.Units.*;
 
 import javax.measure.Unit;
 import javax.measure.quantity.Length;
 import javax.measure.quantity.Mass;
-import tec.units.ri.AbstractSystemOfUnits;
-import tec.units.ri.format.SimpleUnitFormat;
+import tech.units.indriya.AbstractSystemOfUnits;
+import tech.units.indriya.format.SimpleUnitFormat;
 
 /**
  * <p>
@@ -42,7 +42,7 @@ import tec.units.ri.format.SimpleUnitFormat;
  * @noextend This class is not intended to be extended by clients.
  * 
  * @author <a href="mailto:units@catmedia.us">Werner Keil</a>
- * @version 0.1, $Date: 2016-11-23 $
+ * @version 0.2, $Date: 2019-08-15 $
  * @see <a href=
  *      "https://www.reddit.com/r/Marvel/comments/1ye9ty/i_calculated_the_heights_and_weights_of_the/">Reddit:
  *      I calculated the heights and weights of the Guardians Of The Galaxy</a>

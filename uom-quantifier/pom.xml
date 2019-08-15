@@ -55,7 +55,7 @@
 		<version.uom.runkeeper>0.1-SNAPSHOT</version.uom.runkeeper>
 		<version.uom.strava>0.2-SNAPSHOT</version.uom.strava>
 		<version.uom.withings>0.1-SNAPSHOT</version.uom.withings>
-		<fileupload.version>1.3</fileupload.version>
+		<fileupload.version>1.3.3</fileupload.version>
 		<toglz.version>2.3.0.RC1</toglz.version>
 	</properties>
 

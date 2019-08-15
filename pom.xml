@@ -5,9 +5,9 @@
 	<groupId>space.uom</groupId>
 	<version>0.2-SNAPSHOT</version>
 	<parent>
-		<groupId>tec.uom</groupId>
+		<groupId>tech.uom</groupId>
 		<artifactId>uom-parent</artifactId>
-		<version>0.9-SNAPSHOT</version>
+		<version>2.0</version>
 	</parent>
 	<packaging>pom</packaging>
 	<name>Units of Measurement Spaces</name>
