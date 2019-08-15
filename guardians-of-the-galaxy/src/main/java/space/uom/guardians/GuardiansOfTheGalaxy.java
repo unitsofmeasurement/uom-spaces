@@ -1,6 +1,6 @@
 /*
  *  Units of Measurement Spaces for Java
- *  Copyright (c) 2016, Werner Keil and others.
+ *  Copyright (c) 2016-2019, Werner Keil and others.
  *
  * All rights reserved.
  *
