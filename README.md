@@ -17,5 +17,6 @@ If you would like a new space added for a particular case, please just raise a n
 ## POM
 While we provide a Parent POM similar to other repositories, every space and its projects are free to use their own build system or programming language(s) as long as it makes sense in the Units of Measurement context. The license should be an approved [Open source license](https://opensource.org/licenses). Aside from that each space and projects may chose an appropriate license.
 
-[![Issue Stats](http://issuestats.com/github/unitsofmeasurement/uom-spaces/badge/issue)](http://issuestats.com/github/unitsofmeasurement/uom-spaces)
-[![Issue Stats](http://issuestats.com/github/unitsofmeasurement/uom-spaces/badge/pr)](http://issuestats.com/github/unitsofmeasurement/uom-spaces)
+## Planning
+[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/unitsofmeasurement/uom-spaces.svg)](http://isitmaintained.com/project/unitsofmeasurement/uom-spaces "Average time to resolve an issue")
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/unitsofmeasurement/uom-spaces.svg)](http://isitmaintained.com/project/unitsofmeasurement/uom-spaces "Percentage of issues still open")
