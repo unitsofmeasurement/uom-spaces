@@ -57,7 +57,7 @@
 		<version.uom.strava>0.2-SNAPSHOT</version.uom.strava>
 		<version.uom.withings>0.1-SNAPSHOT</version.uom.withings>
 		<fileupload.version>1.5</fileupload.version>
-		<toglz.version>2.3.0.RC1</toglz.version>
+		<toglz.version>2.9.4</toglz.version>
 		<jdkVersion>1.8</jdkVersion>
 		<project.build.javaVersion>${jdkVersion}</project.build.javaVersion>
 		<maven.compile.targetLevel>${jdkVersion}</maven.compile.targetLevel>
